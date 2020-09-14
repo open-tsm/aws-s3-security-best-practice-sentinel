@@ -13,8 +13,7 @@ for violatingS3Buckets as address, bucket {
 	print(address + "'s acl is : " + bucket.change.after.acl + ", this is missing or not private.")
 }
 
-//debug
-// print(violatingS3Buckets)
+print(violatingS3Buckets)
 
 main = rule {
 	length(violatingS3Buckets) == 0
