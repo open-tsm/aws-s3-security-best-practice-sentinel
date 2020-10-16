@@ -11,7 +11,7 @@ policy "disallow-s3-acl-public-read" {
 }
 
 policy "enforce-s3-versioning-mfa-delete-enabled-true" {
-    enforcement_level = "soft-mandatory"
+    enforcement_level = "advisory"
 }
 
 policy "enforce-s3-versioning-enabled-true" {
